@@ -39,8 +39,8 @@ Pet.init(
     // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
     underscored: true,
-    modelName: 'dog'
+    modelName: 'pet'
   }
 );
 
-module.exports = Dog;
+module.exports = Pet;
