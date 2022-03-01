@@ -2,8 +2,8 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const routes = require('./controllers');
-const helpers = require('./utils/helpers');
+//const routes = require('./controllers');
+//const helpers = require('./utils/helpers');
 const htmlRouter = require('./routes/htmlRoutes');
 const apiRouter = require("./routes/apiRoutes");
 
@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 
 const sess = {
-  secret: key, //secret should be coming in from .env file.
+  secret: process.env.key, //secret should be coming in from .env file.
   cookie: {},
   resave: false,
   saveUninitialized: true,
