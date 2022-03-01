@@ -1,0 +1,27 @@
+<!-- Loop over each object in the projects array and show all pets -->
+{{#each pets as |pet| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      <a href="/pet/{{pet.id}}">{{pet.name}}</a>
+    </h2>
+    <p>Created by {{pet.user.name}} on {{format_date pet.date_created}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{pet.breed}}
+    </p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{pet.sex}}
+    </p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{pet.age}}
+    </p>
+  </div>
+</div>
+{{/each}}
