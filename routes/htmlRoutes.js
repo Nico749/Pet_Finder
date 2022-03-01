@@ -4,11 +4,11 @@ const router = express.Router();
 const path = require("path");
 
 //middleware to read data properly
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+//app.use(express.json());
+//app.use(express.urlencoded({ extended: true }));
 
 //serve static files from public foldern
-app.use(express.static("public"));
+//app.use(express.static("public"));
 
 //retrieve home page
 router.get("/", (req, res) =>
