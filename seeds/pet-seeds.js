@@ -6,7 +6,7 @@ const petData = [
         species: "Dog",
         breed: "Rottweiler",
         age: 10,
-        sex: "Male",
+        sex: "Female",
         isvaccinated: true,
         ismicrochipped: true,
         isdesexed: true,
