@@ -1,5 +1,3 @@
-// To use instead of separate dog and cat files
-
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -31,6 +29,13 @@ Pet.init(
     },
     isdesexed: {
       type: DataTypes.BOOLEAN
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
     },
   },
   {
