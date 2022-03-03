@@ -4,8 +4,6 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 //const routes = require('./controllers');
 //const helpers = require('./utils/helpers');
-const htmlRouter = require('./routes/htmlRoutes');
-const apiRouter = require("./routes/apiRoutes");
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -39,9 +37,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Routes directory
-//app.use(routes);
-app.use('/', htmlRouter);
-app.use('/api', apiRouter);
+app.use(routes);
+
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));

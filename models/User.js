@@ -26,6 +26,7 @@ User.init(
 
     password: {
       type: DataTypes.STRING,
+      len: [9],
     },
 
     name: {
