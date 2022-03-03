@@ -20,6 +20,9 @@ Pet.init(
     sex: {
       type: DataTypes.STRING
     },
+    photourl: {
+      type: DataTypes.STRING
+    },
        
     isvaccinated: {
       type: DataTypes.BOOLEAN
