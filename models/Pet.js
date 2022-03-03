@@ -9,6 +9,12 @@ Pet.init(
     //   type: DataTypes.UUID,
     //   // defaultValue: UUIDV4,
     // },
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     name: {
       type: DataTypes.STRING
     },
