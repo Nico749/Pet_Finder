@@ -1,6 +1,4 @@
 // Registered User Database
-// Yeah, I need to do something about the password thing for 
-// security, but this is a rough starting point
 
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
@@ -27,7 +25,7 @@ User.init(
     password: {
       type: DataTypes.STRING,
       validate: {
-        len: [9],
+        len: [17],
       }
     },
 
