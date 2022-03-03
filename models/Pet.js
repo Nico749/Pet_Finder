@@ -5,10 +5,10 @@ class Pet extends Model {}
 
 Pet.init(
   {
-    listing_number: {
-      type: DataTypes.UUID,
-      defaultValue: UUIDV4,
-    },
+    // listing_number: {
+    //   type: DataTypes.UUID,
+    //   // defaultValue: UUIDV4,
+    // },
     name: {
       type: DataTypes.STRING
     },

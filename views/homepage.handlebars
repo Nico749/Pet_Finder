@@ -6,22 +6,52 @@
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       <a href="/pet/{{pet.id}}">{{pet.name}}</a>
     </h2>
-    <p>Created by {{pet.user.name}}</p>
+    
+    <p>Created by: {{{pet.user.name}}}</p>
   </div>
   <div class="col-md-7">
     <p>
-      {{pet.breed}}
+      Breed: {{pet.breed}}
     </p>
   </div>
   <div class="col-md-7">
     <p>
-      {{pet.sex}}
+      Sex: {{pet.sex}}
     </p>
   </div>
   <div class="col-md-7">
     <p>
-      {{pet.age}}
+      Age: {{pet.age}}
     </p>
+  </div>
+  <div class="col-md-7">
+    {{#if isvaccinated}}
+    <p>
+      Currently vaccinated
+    </p>
+    {{else}}
+    <p>
+      Not vaccinated
+    </p>
+    {{/if}}
+    {{#if ismicrochipped}}
+    <p>
+      Currently microchipped
+    </p>
+    {{else}}
+    <p>
+      Not microchipped
+    </p>
+    {{/if}}
+    {{#if isdesexed}}
+    <p>
+      Currently desexed
+    </p>
+    {{else}}
+    <p>
+      Not desexed
+    </p>
+    {{/if}}
   </div>
 </div>
 {{/each}}

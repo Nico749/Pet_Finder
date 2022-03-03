@@ -10,6 +10,7 @@ const petData = [
         isvaccinated: true,
         ismicrochipped: true,
         isdesexed: true,
+        user_id:4
     },
     {
         name: "Koko",
@@ -20,6 +21,7 @@ const petData = [
         isvaccinated: true,
         ismicrochipped: true,
         isdesexed: false,
+        user_id:2
     },
     {
         name: "Luna",
@@ -30,6 +32,7 @@ const petData = [
         isvaccinated: false,
         ismicrochipped: true,
         isdesexed: false,
+        user_id:3
     },
     {
         name: "Boots",
@@ -40,6 +43,7 @@ const petData = [
         isvaccinated: true,
         ismicrochipped: false,
         isdesexed: true,
+        user_id:1
     },
 
 ];
