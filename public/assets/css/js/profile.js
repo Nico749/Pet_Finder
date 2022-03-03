@@ -5,12 +5,11 @@ const newFormHandler = async (event) => {
     const name = document.querySelector('#pet-name').value.trim();
     const species = document.querySelector('#pet-species').value.trim();
     const breed = document.querySelector('#pet-breed').value.trim();
-    const description = document.querySelector('#pet-desc').value.trim();
   
-    if (name && species && breed && description) {
+    if (name && species && breed) {
       const response = await fetch(`/api/pets`, {
         method: 'POST',
-        body: JSON.stringify({ name, species, breed, description }),
+        body: JSON.stringify({ name, species, breed }),
         headers: {
           'Content-Type': 'application/json',
         },

@@ -6,10 +6,6 @@ User.hasMany(Pet, {
   onDelete: 'CASCADE',
 });
 
-// Pet.hasOne(User, {
-//   foreignKey: 'user_id',
-//   // When we delete a User, make sure to also delete the associated Pet
-// });
 
 Pet.belongsTo(User, {
   foreignKey: 'user_id',
