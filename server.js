@@ -14,7 +14,9 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Set up Handlebars.js engine with custom helpers
+
 const hbs = exphbs.create({  });
+
 
 const sess = {
   secret: process.env.key, //secret should be coming in from .env file.
