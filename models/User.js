@@ -5,34 +5,34 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class User extends Model {}
+class User extends Model { }
 
 User.init(
   {
-      id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: true,
-      },
-    
-      email: {
-        type: DataTypes.STRING,
-        unique: true,
-        validate: {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+
+    email: {
+      type: DataTypes.STRING,
+      unique: true,
+      validate: {
         isEmail: true,
-        },
       },
-        
-      password: {
-        type: DataTypes.STRING,
-      },
+    },
+
+    password: {
+      type: DataTypes.STRING,
+    },
 
     name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    
+
     phone: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -46,11 +46,11 @@ User.init(
     isphonecontact: {
       type: DataTypes.BOOLEAN
     },
-    
+
     isemailcontact: {
       type: DataTypes.BOOLEAN
     },
-    
+  },
   {
     sequelize,
     timestamps: false,
