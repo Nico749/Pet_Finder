@@ -17,6 +17,8 @@ const app = express();
 
 const PORT = process.env.PORT || 3007;
 
+app.use(express.static(path.join(__dirname, "public")));
+
 // Set up Handlebars.js engine with custom helpers
 
 const hbs = exphbs.create({  });
@@ -32,7 +34,7 @@ const sess = {
   })
 };
 
-app.use(express.static(path.join(__dirname, "public")));
+
 
 app.use(session(sess));
 app.use(helmet());  //security library

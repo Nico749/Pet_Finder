@@ -1,7 +1,28 @@
 body {
-   color: #59adde;
+   background-color: 
+#8cede5;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 h1 {
     font-family: 'Road Rage', cursive;
+    text-align: center;
+    font-size: 80px;
+}
+
+footer {
+    margin-top: 20px;
+    height: 100px;
+    text-align: center;
+    color: black; 
+}
+
+#contact-admin {
+    margin-top: 20px;
 }

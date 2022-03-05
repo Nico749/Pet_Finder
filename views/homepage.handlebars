@@ -1,10 +1,14 @@
+<nav>
+    <button id="sign-up-button" > Sign Up or Log In</button> </nav>
+
 <!-- Loop over each object in the projects array and show all pets -->
 {{#each pets as |pet| }}
-<div class="row mb-4 project">
+<div class=" card row mb-4 project">
   <div class="col-md-5">
     <h2>
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      <a href="/pet/{{pet.id}}">{{pet.name}}</a>
+     <a href= "/pet/{{pet.id}}"> {{pet.name}}</a> 
+
     </h2>
 
     
