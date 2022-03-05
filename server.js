@@ -3,14 +3,18 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
+const helmet = require('helmet');  //security library
+
 //const helpers = require('./utils/helpers');
 
 
 const sequelize = require('./config/connection');
+
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 require('dotenv').config(); //added this so that secret key will be coming in from .env file
 
 const app = express();
+
 const PORT = process.env.PORT || 3001;
 
 // Set up Handlebars.js engine with custom helpers
@@ -29,6 +33,7 @@ const sess = {
 };
 
 app.use(session(sess));
+app.use(helmet());  //security library
 
 // Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
