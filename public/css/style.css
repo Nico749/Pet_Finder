@@ -1,0 +1,65 @@
+body {
+   background-color: #74b1e3;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: 'Road Rage', cursive;
+    text-align: center;
+    font-size: 80px;
+}
+
+footer {
+    margin-top: 20px;
+    height: 100px;
+    text-align: center;
+    color: black; 
+}
+
+#contact-admin {
+    margin-top: 20px;
+}
+
+#pet-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#pet-cards {
+  max-width: 100%;
+  min-width: 300px;
+  border: 10px solid #3d2325;
+}
+
+#pet-cards:hover {
+    transform: scale(1.05);
+}
+
+#pet-search {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  min-width: 500px;
+
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+}

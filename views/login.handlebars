@@ -1,43 +1,50 @@
 {{!-- login and signup handlebars --}}
-<div class="row">
+<div>
+<div id = "form-container" class="row d-flex justify-content-evenly">
   <div class="col-md-6">
-    <h2>Login</h2>
-
-    <form class="form login-form">
+    <form  class="form login-form d-flex justify-content-evenly flex-column align-items-stretch">
+    <h2>Login</h2> 
+    <br>
       <div class="form-group">
         <label for="email-login">Email:</label>
-        <input class="form-input" type="text" id="email-login" />
+        <input class="form-input" type="text" id="email-login" placeholder="catgirl123@hotmail.com" />
       </div>
+      <br>
       <div class="form-group">
-        <label for="password-login">Password:</label>
+        <label for="password-login" placeholder="*********">Password:</label>
         <input class="form-input" type="password" id="password-login" />
       </div>
+      <br>
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
+        <button class="btn btn-primary" type="submit">Login</button>
       </div>
     </form>
   </div>
   <div class="col-md-6">
     <h2>Signup</h2>
-
-    <form class="form signup-form">
+<br>
+    <form class="form signup-form d-flex justify-content-evenly flex-column">
       <div class="form-group">
         <label for="name-signup">Name:</label>
-        <input class="form-input" type="text" id="name-signup" />
+        <input class="form-input" type="text" id="name-signup" placeholder="John Smith" />
       </div>
+      <br>
       <div class="form-group">
         <label for="email-signup">Email:</label>
-        <input class="form-input" type="text" id="email-signup" />
+        <input class="form-input" type="text" id="email-signup" placeholder="iheartdogs@gmail.com" />
       </div>
+      <br>
       <div class="form-group">
         <label for="password-signup">Password:</label>
-        <input class="form-input" type="password" id="password-signup" />
+        <input class="form-input" type="password" id="password-signup" placeholder="Must contain 9 characters" />
       </div>
+      <br>
       <div class="form-group">
         <button class="btn btn-primary" type="submit">Signup</button>
       </div>
     </form>
+    </div>
   </div>
 </div>
 
-<script src="/public/assets/css/js/login.js"></script>
+<script src="/js/login.js"></script>

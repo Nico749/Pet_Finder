@@ -18,7 +18,7 @@ const newFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to create new pet to adopt');
+        alert('Failed to post your pet.');
       }
     }
   };

@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Find-a-Pet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Road+Rage&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
-  <script src="https://use.fontawesome.com/94935f4393.js"></script>
-  <link rel="stylesheet" href="../../public/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
 </head>
 
 <body>
@@ -19,19 +22,50 @@
     <h1>
       Find-A-Pet
     </h1>
-    <div id="buttons">
-    <button> Sign Up </button>
-    <button> Log In </button>      
-    </div>
   </header>
+  <div class="display-flex row">
+  <form id="pet-search" class="d-flex justify-center">
+    <div>
+    <input type="text" id="search-box" name="search-box" placeholder="Search for a pet"/>
+    <button type="submit" for="pet-search"> Search </button>
+    </div>
+  <div>
+    I'm looking for a ... 
+    <label for="search-cat"> Cat </label>
+    <input type="checkbox" id="search-cat" name="search-cat">
+    <label for="search-dog"> Dog </label>
+    <input type="checkbox" id="search-dog" name="search-dog">
+  </div>
+  <div>
+    Sex: 
+    <label for="sex-female"> F </label>
+    <input type="checkbox" id="sex-female" name="sex-female">
+    <label for="sex-male"> M </label>
+    <input type="checkbox" id="sex-male" name="sex-male">
+  </div>
+  <div>
+    Options: 
+     <label for="is-vaccinated"> Vaccinated </label>
+    <input type="checkbox" id="is-vaccinated" name="is-vaccinated">
+    <label for="is-microchipped"> Microchipped </label>
+    <input type="checkbox" id="is-microchipped" name="is-microchipped">
+     <label for="is-desexed"> Desexed </label>
+    <input type="checkbox" id="is-desexed" name="is-desexed">
+    </div>
+    </form>
+    </div>
+
   <main class="container container-fluid mt-5">
+   
     <!-- Render the contents of the sub layout here -->
     {{{ body }}}
   </main>
   <footer>
+    <div id="contact-admin" >
       <a href="www.twitter.com"><i class="bi bi-twitter"></i></a>
       <a href="www.instagram.com"><i class="bi bi-instagram"></i></a>
-      <a href="mailto:gmail@hotmail.com" ><i class="bi bi-envelope-heart"></i></a>
+      <a href="mailto:gmail@hotmail.com" > <i class="bi bi-envelope"></i></a>
+      </div>
   </footer>
 </body>
 
