@@ -75,13 +75,13 @@
   <div class="col-md-6 project-list">
     <h3>Current Pets:</h3>
 
-    {{#each pets as |pets|}}
+    {{#each pets as |pet|}}
     <div class="row mb-2">
       <div class="col-md-8">
         <h4><a href="/pet/{{pet.id}}">{{name}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{pet.id}}">DELETE</button>
+        <button id ="delete-pet" class="btn btn-sm btn-danger" data-id="{{pet.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}
