@@ -9,6 +9,11 @@ a {
     color: black;
 }
 
+img {
+    width: 15%;
+    height:auto;
+}
+
 h1 {
     font-family: 'Road Rage', cursive;
     text-align: center;
