@@ -29,6 +29,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/pet/:id', async (req, res) => {
+  console.log(`this is the id ${req.params.id}`)
   try {
     const petData = await Pet.findByPk(req.params.id, {
       include: [

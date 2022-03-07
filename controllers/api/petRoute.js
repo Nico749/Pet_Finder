@@ -19,6 +19,7 @@ router.post('/', withAuth, async (req, res) => {
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const petData = await Pet.destroy({
+      
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
@@ -26,7 +27,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     });
 
     if (!petData) {
-      res.status(404).json({ message: 'No pet found with this id!' });
+      res.status(404).json({ message: 'No pet has this id!' });
       return;
     }
 
