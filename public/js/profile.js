@@ -6,14 +6,14 @@ const newFormHandler = async (event) => {
     const species = document.querySelector('#pet-species').value.trim();
     const breed = document.querySelector('#pet-breed').value.trim();
     const age = document.querySelector('#pet-age').value.trim();
-    const sex = document.querySelector('#pet-sex').value.trim();
-    const description = document.querySelector('#pet-description').value.trim();
-    const photourl = document.querySelector('#pet-photourl').value.trim();
+    //const sex = document.querySelector('#pet-sex').value.trim();
+    const description = document.querySelector('#pet-desc').value.trim();
+    const photourl = document.querySelector('#pet-url').value.trim();
   
     if (name && species && breed && age) {
       const response = await fetch(`/api/pet`, {
         method: 'POST',
-        body: JSON.stringify({ name, species, breed, age, sex, description, photourl }),
+        body: JSON.stringify({ name, species, breed, age, description, photourl }),
         headers: {
           'Content-Type': 'application/json',
         },
@@ -44,8 +44,8 @@ const newFormHandler = async (event) => {
   };
   
   document
-    .querySelector('.new-pet-form')
-    .addEventListener('submit', newFormHandler);
+    .querySelector('#submit-pet')
+    .addEventListener('click', newFormHandler);
   
   document
     .querySelector('#delete-pet')
