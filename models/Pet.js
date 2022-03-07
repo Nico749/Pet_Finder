@@ -31,7 +31,8 @@ Pet.init(
       type: DataTypes.STRING
     },
     photourl: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull:true
     },
        
     isvaccinated: {

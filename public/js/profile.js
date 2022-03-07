@@ -7,7 +7,7 @@ const newFormHandler = async (event) => {
     const breed = document.querySelector('#pet-breed').value.trim();
   
     if (name && species && breed) {
-      const response = await fetch(`/api/pets`, {
+      const response = await fetch(`/api/pet`, {
         method: 'POST',
         body: JSON.stringify({ name, species, breed }),
         headers: {
@@ -27,7 +27,7 @@ const newFormHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/pets/${id}`, {
+      const response = await fetch(`/api/pet/${id}`, {
         method: 'DELETE',
       });
   
