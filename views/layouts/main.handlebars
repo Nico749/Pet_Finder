@@ -56,6 +56,16 @@
     </div>
 
   <main class="container container-fluid mt-5">
+    <nav>
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button class="no-button" id="logout">Logout</button>
+        {{else}}
+       
+    <button id="sign-up-button" ><a href="/login">Sign Up or Log In</button></a>
+        {{/if}}
+      </nav>
    
     <!-- Render the contents of the sub layout here -->
     {{{ body }}}
@@ -67,6 +77,10 @@
       <a href="mailto:gmail@hotmail.com" > <i class="bi bi-envelope"></i></a>
       </div>
   </footer>
-</body>
 
+ <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
 </html>
