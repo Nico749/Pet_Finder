@@ -46,8 +46,8 @@ User.init(
 
     phone: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      unique: true,
+      allowNull: true,
+  
     },
 
     Suburb: {

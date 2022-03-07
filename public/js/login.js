@@ -3,7 +3,7 @@ const loginFormHandler = async (event) => {
     // Collect values from the login form
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
-    //const hashPassword = await bcrypt.hash(password, 17);
+
   
   if (email && password) {
     // Send a POST request to the API endpoint
@@ -28,12 +28,14 @@ const signupFormHandler = async (event) => {
     const name = document.querySelector('#name-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
-    //const hashPassword = await bcrypt.hash(password, 17);
+    const phone = document.querySelector('#phone-signup').value.trim();
   
-  if (name && email && password) {
+  
+  if (name && email && password&&phone) {
+    console.log(name)
     const response = await fetch('/api/users', {
       method: 'POST',
-      body: JSON.stringify({ name, email, password }),
+      body: JSON.stringify({ name, email, password,phone }),
       headers: { 'Content-Type': 'application/json' },
     });
   
