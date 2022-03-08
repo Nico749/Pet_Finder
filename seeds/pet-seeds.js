@@ -1,36 +1,14 @@
 const Pet = require('../models/Pet');
 
 const petData = [
-    {
-        name: "Mandy",
-        species: "Dog",
-        breed: "Rottweiler",
-        age: 10,
-        // sex: "Female",
-        // isvaccinated: true,
-        // ismicrochipped: true,
-        // isdesexed: true,
-        // photourl: "https://www.pupvine.com/wp-content/uploads/2021/03/a-portrait-of-a-adorable-Rottweiler.jpg",
-        user_id:4
-    },
-    {
-        name: "Koko",
-        species: "Dog",
-        breed: "Boxer",
-        age: 5,
-        // sex: "Male",
-        // isvaccinated: true,
-        // ismicrochipped: true,
-        // isdesexed: false,
-        // photourl: "https://puppyweightcalculator.com/wp-content/uploads/2021/04/yousef-espanioly-Wgaqx7loF2A-unsplash-2048x2048.jpg",
-        user_id:2   
-    },
+    
     {
         name: "Luna",
         species: "Cat",
         breed: "Birman",
         age: 8,
-        // sex: "Female",
+        description:"lovely cat",
+        sex: "Female",
         // isvaccinated: false,
         // ismicrochipped: true,
         // isdesexed: false,
@@ -42,7 +20,8 @@ const petData = [
         species: "Cat",
         breed: "Ragdoll",
         age: 6,
-        // sex: "Male",
+        description:"it is a beautiful cat",
+         sex: "Male",
         // isvaccinated: true,
         // ismicrochipped: false,
         // isdesexed: true,
