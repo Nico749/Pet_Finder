@@ -29,10 +29,10 @@ Pet.init(
       allowNull: false,
     },
 
-    // sex: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // },
+    sex: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     description: {
       type: DataTypes.STRING,
     },
