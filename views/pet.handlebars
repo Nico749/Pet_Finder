@@ -1,52 +1,42 @@
-
 {{!-- handlebar for when we retrieve a single pet --}}
-<div class="text-center">
-  <h2>{{name}}</h2>
 
-  <p> <img src="{{photourl}}"</p>
-
-
-  <p>Breed: {{breed}}</p>
-  
-    <p>Sex: {{sex}}
-    </p>
- 
-    <p>
-      Age: {{age}}
-    </p>
-  
-    <p>
-      Description: {{description}}
-    </p>
-    
-    {{#if isvaccinated}}
-    <p>
-      Currently vaccinated
-    </p>
-    {{else}}
-    <p>
-      Not vaccinated
-    </p>
-    {{/if}}
-    {{#if ismicrochipped}}
-    <p>
-      Currently microchipped
-    </p>
-    {{else}}
-    <p>
-      Not microchipped
-    </p>
-    {{/if}}
-    {{#if isdesexed}}
-    <p>
-      Currently desexed
-    </p>
-    {{else}}
-    <p>
-      Not desexed
-    </p>
-    {{/if}}
-
-
-  
+<div class="container w-25 card">
+  <div class="text-center">
+    <h2>{{name}}</h2>
+    <div class="text-start">
+      <p>Breed: {{breed}}</p>
+      <p>Sex: {{sex}}
+      </p>
+      <p>
+        Age: {{age}}
+      </p>
+      {{#if isvaccinated}}
+      <p>
+        Currently vaccinated
+      </p>
+      {{else}}
+      <p>
+        Not vaccinated
+      </p>
+      {{/if}}
+      {{#if ismicrochipped}}
+      <p>
+        Currently microchipped
+      </p>
+      {{else}}
+      <p>
+        Not microchipped
+      </p>
+      {{/if}}
+      {{#if isdesexed}}
+      <p>
+        Currently desexed
+      </p>
+      {{else}}
+      <p>
+        Not desexed
+      </p>
+      {{/if}}
+    </div>
+  </div>
 </div>
