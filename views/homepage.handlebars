@@ -1,6 +1,6 @@
 {{!-- <nav>
     <button id="sign-up-button" > Sign Up or Log In</button> </nav> --}}
- <div class="display-flex row">
+ {{!-- <div class="display-flex row">
   <form id="pet-search" class="d-flex justify-center">
     <div>
     <input type="text" id="search-box" name="search-box" placeholder="Search for a pet"/>
@@ -31,7 +31,7 @@
     <input type="checkbox" id="is-desexed" name="is-desexed">
     </div>
     </form>
-    </div>
+    </div> --}}
 
 <!-- Loop over each object in the projects array and show all pets -->
 <div id="pet-gallery" class="d-flex justify-content-evenly">
@@ -57,6 +57,9 @@
   <div class="col-md-7">
     <p>
       <b>Age:</b> {{pet.age}}
+    </p>
+    <p>
+      <b>Description:</b> {{pet.description}}
     </p>
   </div>
   <div class="col-md-7">

@@ -33,9 +33,9 @@ Pet.init(
     //   type: DataTypes.STRING,
     //   allowNull: false,
     // },
-    // description: {
-    //   type: DataTypes.STRING,
-    // },
+    description: {
+      type: DataTypes.STRING,
+    },
     // photourl: {
     //   type: DataTypes.STRING,
     //   allowNull:true
