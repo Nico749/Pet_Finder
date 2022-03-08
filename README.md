@@ -40,7 +40,7 @@ The app requires a .env file to run (not included in the repository)
 
 ## Contact
 Contributors can be contacted through their github pages
-<a href="https://github.com/Nico749">Nico Pasqualini</a>
-<a href="https://github.com/ekubik">Ewa Kubik</a>
-<a href="https://github.com/Eugene32">Reynan Kanindot</a>
-<a href="https://github.com/emhat1">Erin Hatherell</a>
+* <a href="https://github.com/Nico749">Nico Pasqualini</a>
+* <a href="https://github.com/ekubik">Ewa Kubik</a>
+* <a href="https://github.com/Eugene32">Reynan Kanindot</a>
+* <a href="https://github.com/emhat1">Erin Hatherell</a>
