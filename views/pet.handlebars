@@ -4,42 +4,44 @@
   <div class="text-center">
     <h2>{{name}}</h2>
     <div class="text-start">
-      <p>Breed: {{breed}}</p>
-      <p>Sex: {{sex}}
+      <p><b>Breed:</b> {{breed}}</p>
+      <p><b>Sex:</b> {{sex}}
       </p>
       <p>
-        Age: {{age}}
+        <b>Age:</b> {{age}}
       </p>
 
       <p>
-        Description: {{description}}
+      <b>Description:</b> {{description}}
       </p>
+      {{#if logged_in}}
       {{#if isvaccinated}}
       <p>
-        Currently vaccinated
+        <b>Vaccinated:</b> Yes
       </p>
       {{else}}
       <p>
-        Not vaccinated
+          <b>Vaccinated:</b> No
       </p>
       {{/if}}
       {{#if ismicrochipped}}
       <p>
-        Currently microchipped
+         <b>Microchipped:</b> Yes
       </p>
       {{else}}
       <p>
-        Not microchipped
+        <b>Microchipped:</b> No
       </p>
       {{/if}}
       {{#if isdesexed}}
       <p>
-        Currently desexed
+        <b>Desexed:</b> Yes
       </p>
       {{else}}
       <p>
-        Not desexed
+        <b>Desexed:</b> No
       </p>
+      {{/if}}
       {{/if}}
     </div>
   </div>
