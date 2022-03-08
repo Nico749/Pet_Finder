@@ -28,6 +28,7 @@ Pet.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+
     // sex: {
     //   type: DataTypes.STRING,
     //   allowNull: false,
@@ -39,6 +40,7 @@ Pet.init(
     //   type: DataTypes.STRING,
     //   allowNull:true
     // },
+
        
     // isvaccinated: {
     //   type: DataTypes.BOOLEAN
