@@ -12,7 +12,7 @@ img {
     height:auto;
 }
 
-#headingPic {
+.headingPic {
     max-height: 80px;
     width:auto;
 }
