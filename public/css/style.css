@@ -1,7 +1,5 @@
 body {
    background-color: #74b1e3;
-
-
 }
 
 a {
@@ -12,6 +10,11 @@ a {
 img {
     width: 15%;
     height:auto;
+}
+
+#headingPic {
+    max-height: 80px;
+    width:auto;
 }
 
 h1 {
