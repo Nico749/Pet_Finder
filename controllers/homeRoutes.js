@@ -50,6 +50,29 @@ router.get('/pet/:id', async (req, res) => {
   }
 });
 
+// router.get('/pet/:name', async (req, res) => {
+//   console.log(`the name is ${req.params.name}`)
+//   try {
+//     const petData = await Pet.findByPk(req.params.name, {
+//       include: [
+//         {
+//           model: User,
+//           attributes: ['name'],
+//         },
+//       ],
+//     });
+
+//     const pet = petData.get({ plain: true });
+
+//     res.render('pet', {
+//       ...pet,
+//       logged_in: req.session.logged_in
+//     });
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
+
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {

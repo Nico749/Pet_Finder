@@ -5,10 +5,7 @@ class Pet extends Model {}
 
 Pet.init(
   {
-    // listing_number: {
-    //   type: DataTypes.UUID,
-    //   // defaultValue: UUIDV4,
-    // },
+   
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -26,32 +23,32 @@ Pet.init(
     breed: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
+     },
     age: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    sex: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.STRING,
-    },
-    photourl: {
-      type: DataTypes.STRING,
-      allowNull:true
-    },
+    // sex: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    // description: {
+    //   type: DataTypes.STRING,
+    // },
+    // photourl: {
+    //   type: DataTypes.STRING,
+    //   allowNull:true
+    // },
        
-    isvaccinated: {
-      type: DataTypes.BOOLEAN
-    },
-    ismicrochipped: {
-      type: DataTypes.BOOLEAN
-    },
-    isdesexed: {
-      type: DataTypes.BOOLEAN
-    },
+    // isvaccinated: {
+    //   type: DataTypes.BOOLEAN
+    // },
+    // ismicrochipped: {
+    //   type: DataTypes.BOOLEAN
+    // },
+    // isdesexed: {
+    //   type: DataTypes.BOOLEAN
+    // },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
