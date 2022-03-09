@@ -12,6 +12,10 @@ img {
     height:auto;
 }
 
+nav {
+    margin-bottom: 30px;
+}
+
 #headingPic {
     max-height: 80px;
     width:auto;
@@ -71,3 +75,4 @@ h2 {
     font-family: 'Caveat', cursive;
     font-size: 40px;
 }
+

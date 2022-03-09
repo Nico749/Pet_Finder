@@ -36,18 +36,19 @@
   </header>
 
   <main class="container container-fluid mt-5">
+    <div class="d-flex flex-row justify-content-end">
     <nav>
       <!-- Conditionally render login or logout links -->
       {{#if logged_in}}
-      <button><a href="/profile">Profile</a></button>
-      <button id="logout">Logout</button>
+      <button class="btn btn-light"><a href="/profile">Profile</a></button>
+      <button id="logout" class="btn btn-light" >Logout</button>
       {{else}}
           {{!-- This login or sign up button should be hidden when you are in login route --}}
-      <button id="sign-up-button"><a href="/login">Sign Up or Log In</a></button>
+      <button id="sign-up-button" class="btn btn-light"><a href="/login">Sign Up or Log In</a></button>
 
       {{/if}}
     </nav>
-
+</div>
     <!-- Render the contents of the sub layout here -->
     {{{ body }}}
   </main>
