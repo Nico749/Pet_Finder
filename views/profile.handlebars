@@ -5,8 +5,9 @@
   </div>
 </div>
 
+<div class="container d-flex flex-row justify-content-evenly">
 <div class="row mt-4">
-  <div class="col-md-6">
+  <div>
     <h3>Add a new pet:</h3>
 
     <form class="container form new-pet-form row">
@@ -70,11 +71,10 @@
 </div>
 
 
-</form>
-</div>
 {{!-- we can cancel pets that we posted before --}}
 {{#if pets.length}}
 <div class="col-md-6 project-list">
+  <br>
   <h3>Current Pets:</h3>
 
   {{#each pets as |pet|}}

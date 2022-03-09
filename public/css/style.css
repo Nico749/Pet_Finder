@@ -76,3 +76,7 @@ h2 {
     font-size: 40px;
 }
 
+ #sign-up-h2::before {
+     content: "\f6be";
+ }
+
