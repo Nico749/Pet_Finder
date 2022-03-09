@@ -80,10 +80,10 @@
   {{#each pets as |pet|}}
   <div class="row mb-2">
     <div class="col-md-8">
-      <h4><a href="/pet/{{pet.id}}">{{name}}</a></h4>
+      <h4 class="pet-name-add"><a href="/pet/{{pet.id}}">{{name}}</a></h4>
     </div>
     <div class="col-md-4">
-      <button class="btn btn-sm btn-danger delete-pet" data-id="{{pet.id}}">DELETE</button>
+      <button class="btn btn-sm btn-danger delete-pet" data-id="{{pet.id}}">DELETE <i class="bi bi-trash"></i></button>
     </div>
   </div>
   {{/each}}
