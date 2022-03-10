@@ -7,9 +7,10 @@ a {
     color: black;
 }
 
-img {
-    width: 15%;
-    height:auto;
+#pet-cards img,
+.single-pet-card img {
+    max-height: 80px;
+    width:auto;
 }
 
 nav {
