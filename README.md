@@ -31,7 +31,7 @@ The project was created using:
 
 ## Installation Instructions
 
-To run successfully, the app requires the installation of Sequelize, dotenv, Express and Handlebars.
+To run successfully, the app requires the installation of Sequelize, dotenv, Express, Helmet and Handlebars.
 
 The app requires a .env file to run (not included in the repository)
 
