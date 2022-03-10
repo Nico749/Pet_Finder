@@ -6,89 +6,64 @@
 </div>
 
 <div class="container d-flex flex-row justify-content-evenly">
-<div class="row mt-4">
-  <div>
-    <h3>Add a new pet:</h3>
+  <div class="row mt-4">
+    <div>
+      <h3>Add a new pet:</h3>
 
-    <form class="container form new-pet-form row">
+      <form class="container form new-pet-form row">
 
-      <div class="form-group col col-md-auto">
-        <label class="fs-5" for="pet-name">Pet name: </label> <br>
-        <label class="fs-5" for="pet-species">Species:</label><br>
-        <label class="fs-5" for="pet-breed">Breed:</label><br>
-        <label class="fs-5" for="pet-age">Age:</label><br>
-        <label class="fs-5" for="pet-sex">Gender:</label><br>
-        <label class="fs-5" for="pet-desc">Description:</label>
-        
-
-      </div>
-
-      <div class="form-group col col-md-auto">
-        <input class="form-input rounded " type="text" id="pet-name" name="pet-name" placeholder="e.g. Bruno" /> <br>
-        <input class="form-input rounded" type="text" id="pet-species" name="pet-species" placeholder="e.g. Dog" /><br>
-        <input class="form-input rounded" type="text" id="pet-breed" name="pet-breed" placeholder="e.g. Labrador"/><br>
-        <input class="form-input rounded" type="text" id="pet-age" name="pet-age" placeholder="e.g. 2"/><br>
-        <input class="form-input rounded" id="pet-sex" name="pet-sex" placeholder="Male / Female"></input><br>
-        <textarea class="form-input w-100 rounded" id="pet-desc" name="pet-desc" placeholder="Provide a short description"></textarea><br>
-        
-      </div>
-
-      {{!-- <div class="form-group">
-        <label for="pet-url">Photo (please enter url):</label>
-        <textarea class="form-input" id="pet-url" name="pet-url"></textarea>
-      </div> --}}
-
-      {{!-- <div class="form-group">
-        <label for="female"> F </label>
-        <input type="checkbox" id="female" name="qualities">
-      </div> --}}
-
-      {{!-- <div class="form-group">
-        <label for="male"> M </label>
-        <input type="checkbox" id="male" name="qualities">
-      </div> --}}
-
-      {{!-- <div class="form-group">
-        <label for="vaccinations"> Vaccinated </label>
-        <input type="checkbox" id="vaccinations" name="vaccinations">
-      </div> --}}
-
-      {{!-- <div class="form-group">
-        <label for="microchipped"> Microchipped </label>
-        <input type="checkbox" id="microchipped" name="microchipped">
-      </div> --}}
-
-      {{!-- <div class="form-group">
-        <label for="desexed"> Desexed </label>
-        <input type="checkbox" id="desexed" name="desexed">
-      </div> --}}
-
-      <div class="form-group">
-        <button id="submit-pet" type="submit" class="btn btn-primary w-50 start-0">Submit</button>
-      </div>
-    </form>
-  </div>
-</div>
+        <div class="form-group col col-md-auto">
+          <label class="fs-5" for="pet-name">Pet name: </label> <br>
+          <label class="fs-5" for="pet-species">Species:</label><br>
+          <label class="fs-5" for="pet-breed">Breed:</label><br>
+          <label class="fs-5" for="pet-age">Age:</label><br>
+          <label class="fs-5" for="pet-sex">Gender:</label><br>
+          <label class="fs-5" for="pet-desc">Description:</label>
 
 
-{{!-- we can cancel pets that we posted before --}}
-{{#if pets.length}}
-<div class="col-md-6 project-list">
-  <br>
-  <h3>Current Pets:</h3>
+        </div>
 
-  {{#each pets as |pet|}}
-  <div class="row mb-2">
-    <div class="col-md-8">
-      <h4 class="pet-name-add"><a href="/pet/{{pet.id}}">{{name}}</a></h4>
-    </div>
-    <div class="col-md-4">
-      <button class="btn btn-sm btn-danger delete-pet" data-id="{{pet.id}}">DELETE <i class="bi bi-trash"></i></button>
+        <div class="form-group col col-md-auto">
+          <input class="form-input rounded " type="text" id="pet-name" name="pet-name" placeholder="e.g. Bruno" /> <br>
+          <input class="form-input rounded" type="text" id="pet-species" name="pet-species"
+            placeholder="e.g. Dog" /><br>
+          <input class="form-input rounded" type="text" id="pet-breed" name="pet-breed"
+            placeholder="e.g. Labrador" /><br>
+          <input class="form-input rounded" type="text" id="pet-age" name="pet-age" placeholder="e.g. 2" /><br>
+          <input class="form-input rounded" id="pet-sex" name="pet-sex" placeholder="Male / Female"></input><br>
+          <textarea class="form-input w-100 rounded" id="pet-desc" name="pet-desc"
+            placeholder="Provide a short description"></textarea><br>
+
+        </div>
+
+
+        <div class="form-group">
+          <button id="submit-pet" type="submit" class="btn btn-primary w-50 start-0">Submit</button>
+        </div>
+      </form>
     </div>
   </div>
-  {{/each}}
-</div>
-{{/if}}
+
+
+  {{!-- we can cancel pets that we posted before --}}
+  {{#if pets.length}}
+  <div class="col-md-6 project-list">
+    <br>
+    <h3>Current Pets:</h3>
+
+    {{#each pets as |pet|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4 class="pet-name-add"><a href="/pet/{{pet.id}}">{{name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger delete-pet" data-id="{{pet.id}}">DELETE <i
+            class="bi bi-trash"></i></button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
 </div>
 
 <script src="/js/profile.js"></script>
