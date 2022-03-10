@@ -6,9 +6,24 @@
     <p><img src="{{photourl}}"></p>
     <div class="text-start">
       <p><b>Breed:</b> {{breed}}</p>
+
+      <p><b>Gender:</b> {{sex}}
+      </p>
+      <p>
+        <b>Age:</b> {{age}}
+      </p>
+      <p>
+        <b>Species:</b> {{species}}
+      </p>
+
+      <p>
+        <b>Description:</b> {{description}}
+      </p>
+
       <p><b>Gender:</b> {{sex}}</p>
       <p><b>Age:</b> {{age}}</p>
       <p><b>Description:</b> {{description}}</p>
+      
       {{#if logged_in}}
       {{#if isvaccinated}}
       <p>
@@ -16,12 +31,12 @@
       </p>
       {{else}}
       <p>
-          <b>Vaccinated:</b> No
+        <b>Vaccinated:</b> No
       </p>
       {{/if}}
       {{#if ismicrochipped}}
       <p>
-         <b>Microchipped:</b> Yes
+        <b>Microchipped:</b> Yes
       </p>
       {{else}}
       <p>

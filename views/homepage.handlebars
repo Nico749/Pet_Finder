@@ -1,109 +1,40 @@
-{{!-- <nav>
-    <button id="sign-up-button" > Sign Up or Log In</button> </nav> --}}
- {{!-- <div class="display-flex row">
-  <form id="pet-search" class="d-flex justify-center">
-    <div>
-    <input type="text" id="search-box" name="search-box" placeholder="Search for a pet"/>
-    <button type="submit" id="petsearch"> Search </button>
-    </div>
-  
-<div>
-    I'm looking for a ... 
-    <label for="search-cat"> Cat </label>
-    <input type="checkbox" id="search-cat" name="search-cat">
-    <label for="search-dog"> Dog </label>
-    <input type="checkbox" id="search-dog" name="search-dog">
-  </div>
-  <div>
-    Sex: 
-    <label for="sex-female"> F </label>
-    <input type="checkbox" id="sex-female" name="sex-female">
-    <label for="sex-male"> M </label>
-    <input type="checkbox" id="sex-male" name="sex-male">
-  </div>
-  <div>
-    Options: 
-     <label for="is-vaccinated"> Vaccinated </label>
-    <input type="checkbox" id="is-vaccinated" name="is-vaccinated">
-    <label for="is-microchipped"> Microchipped </label>
-    <input type="checkbox" id="is-microchipped" name="is-microchipped">
-     <label for="is-desexed"> Desexed </label>
-    <input type="checkbox" id="is-desexed" name="is-desexed">
-    </div>
-    </form>
-    </div> --}}
-
 <!-- Loop over each object in the projects array and show all pets -->
 <div id="pet-gallery" class="d-flex justify-content-evenly">
-{{#each pets as |pet| }}
-<div id= "pet-cards" class="card row mb-4 project">
-  <div class="col-md-7">
-    <h2>
-     <a href= "/pet/{{pet.id}}"> {{pet.name}}</a> 
-    </h2>
-    <p><img href="/pet/{{pet.photourl}}"></p>
-    <p><b>Currently owned by:</b> {{{pet.user.name}}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      <b>Breed:</b> {{pet.breed}}
-    </p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      <b>Gender:</b> {{pet.sex}}
-    </p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      <b>Age:</b> {{pet.age}}
-    </p>
-    <p>
-      <b>Description:</b> {{pet.description}}
-    </p>
-    {{!-- <p>
-      <b>Photo:</b> {{pet.photourl}}
-    </p> --}}
-  </div>
-  
- 
-  {{!-- <div class="col-md-7">
-    {{#if isvaccinated}}
-    <p><b>
-      Currently vaccinated
-      </b>
-    </p>
-    {{else}}
-    <p>
-      Not vaccinated
-    </p>
-    {{/if}}
-    
-    {{#if ismicrochipped}}
-    <p>
-      <b>
-      Microchipped
-      </b>
-    </p>
-    {{else}}
-    <p>
-      Not microchipped
-    </p>
-    {{/if}}
-    
-    {{#if isdesexed}}
-    <p>
-      <b>Desexed</b>
-    </p>
-    {{else}}
-    <p>
-      Not desexed
-    </p>
-    {{/if}}
-    
-  </div> --}}
-</div>
+  {{#each pets as |pet| }}
+  <div id="pet-cards" class="card row mb-4 project">
+    <div class="col-md-7">
+      <h2>
+        <a href="/pet/{{pet.id}}"> {{pet.name}}</a>
+      </h2>
+      <p><img href="/pet/{{pet.photourl}}"></p>
+      <p><b>Currently owned by:</b> {{{pet.user.name}}}</p>
+    </div>
+    <div class="col-md-7">
+      <p>
+        <b>Breed:</b> {{pet.breed}}
+      </p>
+    </div>
+    <div class="col-md-7">
+      <p>
+        <b>Gender:</b> {{pet.sex}}
+      </p>
+    </div>
+    <div class="col-md-7">
+      <p>
+        <b>Age:</b> {{pet.age}}
+      </p>
+      <p>
+        <b>Species:</b> {{pet.species}}
+      </p>
+      <p>
+        <b>Description:</b> {{pet.description}}
+      </p>
+    </div>
 
-{{/each}}
+
+
+  </div>
+
+  {{/each}}
 </div>
 
