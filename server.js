@@ -5,13 +5,10 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helmet = require('helmet');  //security library
 
-//const helpers = require('./utils/helpers');
-
-
 const sequelize = require('./config/connection');
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-require('dotenv').config(); //added this so that secret key will be coming in from .env file
+require('dotenv').config(); 
 
 const app = express();
 
@@ -19,14 +16,19 @@ const PORT = process.env.PORT || 3007;
 
 app.use(express.static(path.join(__dirname, "public")));
 
-// Set up Handlebars.js engine with custom helpers
+// Set up Handlebars.js engine 
 
 const hbs = exphbs.create({  });
 
-
 const sess = {
   secret: process.env.key, //secret should be coming in from .env file.
-  cookie: {},
+  cookie: {
+      // maxAge of 30 minutes listed in milliseconds.
+      maxAge: 1800000,
+      httpOnly: true,
+      secure: false,
+      sameSite: 'strict',
+  },
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
@@ -45,8 +47,6 @@ app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-
 
 // Routes directory
 app.use(routes);
