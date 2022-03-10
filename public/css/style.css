@@ -12,6 +12,10 @@ img {
     height:auto;
 }
 
+nav {
+    margin-bottom: 30px;
+}
+
 #headingPic {
     max-height: 80px;
     width:auto;
@@ -22,6 +26,7 @@ h1 {
     text-align: center;
     font-size: 80px;
 }
+
 
 footer {
     margin-top: 20px;
@@ -42,19 +47,14 @@ footer {
 }
 
 #pet-cards {
-  max-width: 100%;
-  min-width: 300px;
+  max-width: 300px;
+  min-width: 250px;
   border: 10px solid #3d2325;
+  word-wrap:normal ;
 }
 
 #pet-cards:hover {
     transform: scale(1.05);
-}
-
-#pet-search {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 #form-container {
@@ -68,6 +68,24 @@ footer {
 }
 
 h2 {
-    font-family: 'Caveat', cursive;
+    font-family: 'Acme', sans-serif;
     font-size: 40px;
+}
+
+h3 {
+    font-family: 'Acme', sans-serif;
+    text-decoration: underline;
+}
+
+.pet-name-add {
+    font-family: 'Acme', sans-serif;
+}
+
+.user-forms {
+    border: 10px solid #3d2325;
+}
+
+.single-pet-card {
+   border: 10px solid #3d2325;
+   padding-top: 20px;
 }
