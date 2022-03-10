@@ -7,6 +7,10 @@ a {
     color: black;
 }
 
+img {
+    max-height: 80px;
+}
+
 #pet-cards img,
 .single-pet-card img {
     max-height: 80px;
