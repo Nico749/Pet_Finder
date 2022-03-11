@@ -1,11 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Pet extends Model {}
+class Pet extends Model { }
 
 Pet.init(
   {
-   
+
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -23,7 +23,7 @@ Pet.init(
     breed: {
       type: DataTypes.STRING,
       allowNull: false,
-     },
+    },
     age: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -33,6 +33,12 @@ Pet.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    
+    isvaccinated: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+
     description: {
       type: DataTypes.STRING,
     },
@@ -41,10 +47,8 @@ Pet.init(
     //   allowNull:true
     // },
 
-       
-    // isvaccinated: {
-    //   type: DataTypes.BOOLEAN
-    // },
+
+
     // ismicrochipped: {
     //   type: DataTypes.BOOLEAN
     // },

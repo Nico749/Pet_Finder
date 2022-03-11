@@ -20,17 +20,19 @@
         <b>Description:</b> {{description}}
       </p>
 
-      
+
       {{#if logged_in}}
-      {{#if isvaccinated}}
+      {{!-- {{#if isvaccinated}} --}}
       <p>
-        <b>Vaccinated:</b> Yes
+        <b>Vaccinated:</b> {{isvaccinated}} 
       </p>
-      {{else}}
-      <p>
+      {{!-- {{else}} --}}
+      {{!-- <p>
         <b>Vaccinated:</b> No
       </p>
-      {{/if}}
+
+      {{/if}} --}}
+
       {{#if ismicrochipped}}
       <p>
         <b>Microchipped:</b> Yes
@@ -40,6 +42,7 @@
         <b>Microchipped:</b> No
       </p>
       {{/if}}
+
       {{#if isdesexed}}
       <p>
         <b>Desexed:</b> Yes
