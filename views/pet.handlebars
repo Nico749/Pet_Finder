@@ -20,36 +20,23 @@
         <b>Description:</b> {{description}}
       </p>
 
+
+      {{#if logged_in}}   {{!-- These items will only show when logged in  --}}
       
-      {{#if logged_in}}
-      {{#if isvaccinated}}
       <p>
-        <b>Vaccinated:</b> Yes
+        <b>Vaccinated:</b> {{isvaccinated}}
       </p>
-      {{else}}
+    
       <p>
-        <b>Vaccinated:</b> No
+        <b>Microchipped:</b> {{ismicrochipped}}
       </p>
+
+      <p>
+        <b>Desexed:</b> {{isdesexed}}
+      </p>
+      
       {{/if}}
-      {{#if ismicrochipped}}
-      <p>
-        <b>Microchipped:</b> Yes
-      </p>
-      {{else}}
-      <p>
-        <b>Microchipped:</b> No
-      </p>
-      {{/if}}
-      {{#if isdesexed}}
-      <p>
-        <b>Desexed:</b> Yes
-      </p>
-      {{else}}
-      <p>
-        <b>Desexed:</b> No
-      </p>
-      {{/if}}
-      {{/if}}
+      
     </div>
   </div>
 </div>
