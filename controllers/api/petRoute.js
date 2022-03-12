@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Pet } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-
+//post a new pet
 router.post('/', withAuth, async (req, res) => {
   try {
     const newPet = await Pet.create({
@@ -16,6 +16,7 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+//delete an existing pet
 router.delete('/:id', withAuth, async (req, res) => {
   console.log(`the id you passed is ${req.params.id}`)
   try {
