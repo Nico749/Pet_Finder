@@ -17,7 +17,7 @@ router.post('/', withAuth, async (req, res) => {
 });
 
 router.delete('/:id', withAuth, async (req, res) => {
-  console.log(`the id you passed is ${req.params.id}`)
+  //console.log(`the id you passed is ${req.params.id}`)
   try {
     const petData = await Pet.destroy({
       where: {

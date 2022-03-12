@@ -54,10 +54,11 @@ Pet.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
-    // photourl: {
-    //   type: DataTypes.STRING,
-    //   allowNull:true
-    // },
+
+    photourl: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
 
 
 

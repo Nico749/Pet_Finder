@@ -3,7 +3,10 @@
 <div class="container w-25 card single-pet-card">
   <div class="text-center">
     <h2>{{name}}</h2>
-    <p><img src="{{photourl}}"></p>
+
+    {{!-- Image display will be further developed --}}
+    {{!-- <p><img src="{{photourl}}" alt="image" style="border: 5px inset black; height: 50px; width: 25px;"></p> --}}
+
     <div class="text-start">
       <p><b>Breed:</b> {{breed}}</p>
 
@@ -21,12 +24,12 @@
       </p>
 
 
-      {{#if logged_in}}   {{!-- These items will only show when logged in  --}}
-      
+      {{#if logged_in}} {{!-- These items will only show when logged in --}}
+
       <p>
         <b>Vaccinated:</b> {{isvaccinated}}
       </p>
-    
+
       <p>
         <b>Microchipped:</b> {{ismicrochipped}}
       </p>
@@ -34,9 +37,10 @@
       <p>
         <b>Desexed:</b> {{isdesexed}}
       </p>
-      
       {{/if}}
-      
+
+      <p><b>Image Link:  </b><a href="{{photourl}}">Click Me!</p>
+
     </div>
   </div>
 </div>
