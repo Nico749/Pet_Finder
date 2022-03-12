@@ -35,7 +35,7 @@ User.init(
     password: {
       type: DataTypes.STRING,
       validate: {
-        len: [9],
+        len: [9,32],
       }
     },
 
@@ -45,7 +45,7 @@ User.init(
     },
 
     phone: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
   
     },
