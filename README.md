@@ -12,7 +12,7 @@
 
 ## Description
 
-Find-A-Pet is an interactive noticeboard where users can search for pets that are available for adoption. While any user can view a gallery of available pets, only registered and logged-in users can add a new pet, remove one they posted before and see all the details 
+Find-A-Pet is an interactive noticeboard where users can view pets that are available for adoption. While any user can view a gallery of available pets, only registered and logged-in users can add a new pet, remove one they posted before and see all the details 
 
 
 
@@ -27,6 +27,7 @@ The project was created using:
 * SQL
 * Bootstrap CSS Framework
 * CSS
+* Helmet
 
 
 ## Installation Instructions
@@ -41,11 +42,18 @@ The app requires a .env file to run (not included in the repository)
 * Implement a search function to order the results
 
 
-
 ## Demonstration
 
+The deployed project appears as below:
+
+<img src="./public/images/homepage.png" alt="homepage">
+<img src="./public/images/login-signup.png" alt="login and sign up page">
+<img src="./public/images/add-deletepet.png" alt="user profile with ability to add and delete pets">
+
+</br>
+
 ## Link
-To see the working application click on the [heroku link](https://sleepy-island-42629.herokuapp.com/) or clone the [Github link](https://github.com/ekubik/find-a-pet.git)
+To see the working application click on the [heroku link](https://stormy-anchorage-52853.herokuapp.com/) or clone the [Github link](https://github.com/ekubik/find-a-pet.git)
 
 ## Contact
 Contributors can be contacted through their github pages
