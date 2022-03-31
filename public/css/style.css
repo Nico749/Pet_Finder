@@ -2,12 +2,26 @@ body {
    background-image: url("/images/pet_background.jpg");
    background-size: cover;
    background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: 0 200px;
 }
-@media(max-width:650px){
+
+@media(max-width:732px){
+    body {
+        background-image: url("/images/petipad.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+     }   
+}
+
+
+@media(max-width:559px){
     body {
         background-image: url("/images/smallpet.jpg");
         background-size: contain;
         background-repeat: no-repeat;
+        background-attachment: fixed;
      }   
 }
 
@@ -25,14 +39,11 @@ a {
     max-height: 80px;
     width:auto;
 }
-
-nav {
-    margin-bottom: 30px;
-}
-
-.headingPic {
-    max-height: 80px;
-    width:auto;
+.head{
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-color:white;
 }
 
 h1 {
@@ -116,4 +127,9 @@ h3 {
 
 .right{
     justify-content: right;
+}
+
+.btn{
+    background-color:rgba(138, 39, 44, 0.6);
+    color:white;
 }

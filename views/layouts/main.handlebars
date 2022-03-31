@@ -20,41 +20,29 @@
 </head>
 
 <body>
-  <header class="display-flex justify-space-between align-center p-2">
+  <header class="display-flex justify-space-between align-center p-2 head">
   
-      <h1>Pet Finder</h1>
-
-    <a href="/">
-      <h2><i class="px-5 mx-5 bi bi-house-fill"></i></h2>
-    </a>
-
+    <h1>Pet Finder</h1>
+    <button id="" class="btn"><a href="/"> Homepage</a></button>
+    {{#if logged_in}}
+    <button class="btn"><a href="/profile">Profile</a></button>
+    <button id="logout" class="btn ">Logout</button>
+    {{else}}
+  
+    <button id="sign-up-button" class="btn"><a href="/login"> Access</a></button>
+  
+    {{/if}}
+  
   </header>
 
   <main class="container container-fluid mt-5">
-    <div class="d-flex flex-row justify-content-end">
-      <nav>
-        <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <button class="btn btn-primary"><a href="/profile">Profile</a></button>
-        <button id="logout" class="btn btn-primary">Logout</button>
-        {{else}}
-        
-        <button id="sign-up-button" class="btn btn-primary"><a href="/login"> Access</a></button>
-
-        {{/if}}
-      </nav>
-    </div>
+    
     <!-- Render the contents of the sub layout here -->
     {{{ body }}}
   </main>
-  <footer class="position-relative">
-    <div id="contact-admin">
-
-      <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
-      <a href="http://www.instagram.com"><i class="bi bi-instagram"></i></a>
-      <a href="mailto:gmail@hotmail.com"> <i class="bi bi-envelope"></i></a>
-    </div>
-  </footer>
+  
+  
+  
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}
