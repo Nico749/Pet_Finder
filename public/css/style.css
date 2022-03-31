@@ -4,6 +4,8 @@ body {
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: 0 200px;
+   
+   background-color: white;
 }
 
 @media(max-width:732px){
@@ -74,7 +76,7 @@ footer {
 #pet-cards {
   max-width: 300px;
   min-width: 250px;
-  border: 10px solid #3d2325;
+  border: 5px solid #3d2325;
   border-radius: 20px;
   word-wrap:normal ;
   color: aliceblue;
@@ -110,19 +112,20 @@ h3 {
 }
 
 .user-forms {
-    border: 10px solid #3d2325;
+    border: 5px solid #3d2325;
     border-radius: 20%;
     background-color:var(--background);
     color: aliceblue;
 }
 
 .single-pet-card {
-   border: 10px solid #3d2325;
+   border: 5px solid #3d2325;
    padding-top: 20px;
 }
 
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #1cd6d6 !important;
+    margin-top: 5px;
 }
 
 .right{
@@ -132,4 +135,16 @@ h3 {
 .btn{
     background-color:rgba(138, 39, 44, 0.6);
     color:white;
+}
+
+#email-login, #password-login, #name-signup, #phone-signup, #email-signup, #password-signup {
+    margin:5px;
+}
+
+.petform{
+    border: 5px solid #3d2325;
+    border-radius: 10%;
+    background-color:var(--background);
+    color: aliceblue;
+    margin-right: 0;
 }
