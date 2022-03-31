@@ -1,10 +1,23 @@
 body {
-   background-color: #74b1e3;
+   background-image: url("/images/pet_background.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+@media(max-width:650px){
+    body {
+        background-image: url("/images/smallpet.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+     }   
 }
 
+:root{
+    --background:rgba(0,0,0,.6) ;
+}
 a {
     text-decoration: none;
-    color: black;
+    color:whitesmoke;
+    justify-content: center;
 }
 
 #pet-cards img,
@@ -51,7 +64,10 @@ footer {
   max-width: 300px;
   min-width: 250px;
   border: 10px solid #3d2325;
+  border-radius: 20px;
   word-wrap:normal ;
+  color: aliceblue;
+  background-color: var(--background);
 }
 
 #pet-cards:hover {
@@ -84,9 +100,20 @@ h3 {
 
 .user-forms {
     border: 10px solid #3d2325;
+    border-radius: 20%;
+    background-color:var(--background);
+    color: aliceblue;
 }
 
 .single-pet-card {
    border: 10px solid #3d2325;
    padding-top: 20px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #1cd6d6 !important;
+}
+
+.right{
+    justify-content: right;
 }
