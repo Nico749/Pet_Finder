@@ -137,8 +137,13 @@ h3 {
     color:white;
 }
 
-#email-login, #password-login, #name-signup, #phone-signup, #email-signup, #password-signup {
+#email-login, #password-login, #name-signup, #phone-signup, #email-signup, #password-signup, #pet-name, #pet-species,
+#pet-breed, #pet-age, #pet-sex, #pet-isvaccinated, #pet-ismicrochipped, #pet-isdesexed, #pet-desc {
     margin:5px;
+}
+
+#formpet{
+    margin: 5px;
 }
 
 .petform{
@@ -147,4 +152,8 @@ h3 {
     background-color:var(--background);
     color: aliceblue;
     margin-right: 0;
+}
+
+#petname{
+    color: black;
 }

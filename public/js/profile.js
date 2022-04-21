@@ -11,13 +11,13 @@ const newFormHandler = async (event) => {
   const ismicrochipped = document.querySelector('#pet-ismicrochipped').value.trim();
   const isdesexed = document.querySelector('#pet-isdesexed').value.trim();
   const description = document.querySelector('#pet-desc').value.trim();
-  const photourl = document.querySelector('#pet-photourl').value.trim();
+  // const photourl = document.querySelector('#pet-photourl').value.trim();
 
-  if (name && species && breed && age && sex && isvaccinated && ismicrochipped && isdesexed && description && photourl) {
+  if (name && species && breed && age && sex && isvaccinated && ismicrochipped && isdesexed && description) {
 
     const response = await fetch(`/api/pet`, {
       method: 'POST',
-      body: JSON.stringify({ name, species, breed, age, sex, isvaccinated, ismicrochipped, isdesexed, description, photourl }),
+      body: JSON.stringify({ name, species, breed, age, sex, isvaccinated, ismicrochipped, isdesexed, description }),
       headers: {
         'Content-Type': 'application/json',
       },
