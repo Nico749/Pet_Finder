@@ -146,6 +146,14 @@ h3 {
     margin: 5px;
 }
 
+#signupform{
+    margin: 10px;
+}
+
+#signupphone{
+    margin-top: 10px;
+}
+
 .petform{
     border: 5px solid #3d2325;
     border-radius: 10%;
