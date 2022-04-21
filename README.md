@@ -12,7 +12,7 @@
 
 ## Description
 
-Find-A-Pet is an interactive noticeboard where users can view pets that are available for adoption. While any user can view a gallery of available pets, only registered and logged-in users can add a new pet, remove one they posted before and see all the details 
+Pet Finder is a noticeboard where users can view pets that are available for adoption. While any user can view a gallery of available pets, only registered and logged-in users can add a new pet, remove one they posted before and see all the details 
 
 
 
@@ -38,6 +38,7 @@ The app requires a .env file to run (not included in the repository)
 ## Future Development 
 * User should be able to upload images of a pet
 * Implement a search function to order the results
+* Minor styling changes required
 
 
 ## Demo
